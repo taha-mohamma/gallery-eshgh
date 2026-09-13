@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="گالری عشق؛ مجموعه‌ای از عکس‌های زیبا و خاطره‌انگیز">
+  <meta name="theme-color" content="#120b16">
+  <title>گالری عشق ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="glow"></div>
+    <nav>
+      <div class="logo">گالری <span>عشق</span> ❤️</div>
+      <a href="#gallery">گالری</a>
+    </nav>
+    <div class="hero-content">
+      <p class="mini">WELCOME TO MY GALLERY</p>
+      <h1>گالری عشق</h1>
+      <p>اینجا جایی برای عکس‌هایی است که ارزش ماندن دارند.</p>
+      <a class="button" href="#gallery">دیدن عکس‌ها ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery-section">
+      <div class="section-title">
+        <p>مجموعه تصاویر</p>
+        <h2>لحظه‌های ماندگار</h2>
+      </div>
+
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="جست‌وجوی عکس..." aria-label="جست‌وجوی عکس">
+        <div class="filters">
+          <button class="filter active" data-filter="all">همه</button>
+          <button class="filter" data-filter="love">عاشقانه</button>
+          <button class="filter" data-filter="nature">طبیعت</button>
+          <button class="filter" data-filter="memory">خاطره</button>
+        </div>
+      </div>
+
+      <div id="galleryGrid" class="grid">
+        <!-- برای اضافه کردن عکس‌های خودت، فقط src و اطلاعات data را تغییر بده -->
+        <article class="card" data-category="love" data-title="عشق">
+          <img src="images/photo1.jpg" alt="عکس عاشقانه" loading="lazy">
+          <div class="caption"><span>عاشقانه</span><h3>یک قاب از عشق</h3></div>
+        </article>
+        <article class="card" data-category="nature" data-title="آرامش طبیعت">
+          <img src="images/photo2.jpg" alt="عکس طبیعت" loading="lazy">
+          <div class="caption"><span>طبیعت</span><h3>آرامش</h3></div>
+        </article>
+        <article class="card" data-category="memory" data-title="خاطره">
+          <img src="images/photo3.jpg" alt="عکس خاطره" loading="lazy">
+          <div class="caption"><span>خاطره</span><h3>یک خاطره ماندگار</h3></div>
+        </article>
+        <article class="card" data-category="love" data-title="لحظه عاشقانه">
+          <img src="images/photo4.jpg" alt="لحظه عاشقانه" loading="lazy">
+          <div class="caption"><span>عاشقانه</span><h3>لحظه‌ای برای همیشه</h3></div>
+        </article>
+        <article class="card" data-category="nature" data-title="غروب">
+          <img src="images/photo5.jpg" alt="غروب زیبا" loading="lazy">
+          <div class="caption"><span>طبیعت</span><h3>غروب</h3></div>
+        </article>
+        <article class="card" data-category="memory" data-title="خاطرات">
+          <img src="images/photo6.jpg" alt="خاطرات" loading="lazy">
+          <div class="caption"><span>خاطره</span><h3>قاب خاطرات</h3></div>
+        </article>
+      </div>
+
+      <p id="empty" class="empty">عکسی پیدا نشد.</p>
+    </section>
+  </main>
+
+  <div id="viewer" class="viewer" aria-hidden="true">
+    <button id="closeViewer" class="close" aria-label="بستن">×</button>
+    <button id="prev" class="nav prev" aria-label="قبلی">‹</button>
+    <img id="viewerImage" src="" alt="">
+    <button id="next" class="nav next" aria-label="بعدی">›</button>
+  </div>
+
+  <footer>
+    <div>گالری عشق ❤️</div>
+    <small>ساخته شده برای ثبت لحظه‌های ماندگار</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
